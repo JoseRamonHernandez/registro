@@ -18,7 +18,7 @@ if($sentencia)
 else
 {
     ?>
-    <a href="./index.html">error en la conexion a la base de datos</a>
+    <a href="../index.html">error en la conexion a la base de datos</a>
     <?php
 }
 
