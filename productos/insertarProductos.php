@@ -13,7 +13,7 @@ $sentencia = pg_query($conexion, "INSERT INTO productos(codigo_barras, nombre_pr
 
 if($sentencia)
 {
-    header("Location: ../index.html?exito");
+    header("Location: ../index.html");
 }
 else
 {

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/style.css">
+    
+    <title>Formulario</title>
+</head>
+<body>
+    <header>
+        <section>
+        
+        
+        <label for="toggle-1" class="toggle-menu"><ul><li></li> <li></li> <li></li></ul></label>
+        <input type="checkbox" id="toggle-1">
+        
+        <nav>
+        <ul>
+        <li><a href="../index.html"><i class="icon-home"></i>Home</a></li>
+        </ul>
+        </nav>
+        </header>
+        
+        </section>
+    <div class="contianer">
+        
+            <h2>Registro Proovedores</h2>
+            <br>
+            
+                <form class="form-1" method="POST" action="insertarProovedores.php">
+
+                    <div>
+                    <p>ID Proovedor:</p>
+                    <input type="number" name="id" placeholder="Inserta el ID Proovedor" required/>
+                    </div>
+
+                    <div>
+                    <p>Nombre del proovedor:</p>
+                        <input type="text" name="nombre" placeholder="Inserta el nombre del proovedor" required  /> 
+                    </div>
+
+                    <div>
+                    <p>Telefono del proovedor:</p>
+                        <input type="text" name="telefono" placeholder="Inserta el telefono del proovedor" required maxlength="7"/>
+                    </div>
+
+                    <button type="submit">Enviar</button>
+                </form>
+            
+    </div>
+</body>
+</html>
