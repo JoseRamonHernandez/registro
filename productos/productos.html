@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/style.css">
+    
+    <title>Formulario</title>
+</head>
+<body>
+    <header>
+        <section>
+        
+        
+        <label for="toggle-1" class="toggle-menu"><ul><li></li> <li></li> <li></li></ul></label>
+        <input type="checkbox" id="toggle-1">
+        
+        <nav>
+        <ul>
+        <li><a href="../index.html"><i class="icon-home"></i>Home</a></li>
+        </ul>
+        </nav>
+        </header>
+        
+        </section>
+    <div class="contianer">
+        
+            <h2>Registro Productos</h2>
+            <br>
+            
+                <form class="form-1" method="POST" action="insertarProductos.php">
+
+                    <div>
+                    <p>Codigo de barras:</p>
+                    <input type="text" name="codigo_barras" placeholder="Inserta el codigo de barras" required maxlength="10" />
+                    </div>
+
+                    <div>
+                    <p>Nombre del producto:</p>
+                        <input type="text" name="nombre_producto" placeholder="Inserta el nombre del producto" required  /> 
+                    </div>
+
+                    <div>
+                    <p>Precio del producto:</p>
+                        <input type="number" name="precio_producto" placeholder="Inserta el precio del producto" required>
+                    </div>
+
+                    <div>
+                    <p>Stock:</p>
+                        <input type="number" name="stock" placeholder="Inserta la cantidad de producto a dejar" required>
+                    </div>
+
+                    <div>
+                    <p>Proovedor:</p>
+                        <input type="number" name="id_proveedor" placeholder="Ingresa el numero del proovedor" required>
+                    </div>
+
+                    <button type="submit">Enviar</button>
+                </form>
+            
+    </div>
+</body>
+</html>
